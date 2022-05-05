@@ -1,0 +1,52 @@
+.friend {
+	width: calc(33.3% - 5px);
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	border-bottom: 2px solid #000000;
+	box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.2),
+				inset -2px -2px 0 rgba(255, 255, 255, 0.2);
+	overflow: hidden;
+	float: left;
+	margin-right: 5px;
+	position: relative;
+}
+
+.friend > .remove {
+	position: absolute;
+	right: 5px;
+	cursor: pointer;
+	background-image: url(../../images/icons/v22_3.gif);
+	width: 14px;
+	height: 13px;
+	top: 5px;
+	z-index: 9999;
+}
+
+.friend > .avatar {
+	width: 64px;
+	height: 100%;
+	background-position: 0 -15px;
+}
+
+.friend > .friendname {
+	width: calc(100% - 64px);
+	margin-left: 55px;
+	line-height: 50px;
+	position: absolute;
+	top: 0;
+	font-weight: 600;
+	font-family: Ubuntu;
+}
+
+.friend > .friendname > a {
+	color: #FFF;
+}
+
+.offline {
+	background-color: #4c4842;
+}
+
+.online {
+	background-color: #738937;
+}

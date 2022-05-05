@@ -1,0 +1,101 @@
+.user_box {
+    height: 175px;
+    background-image: url('../../images/me/bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.user_box > .avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-position: center -30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 20px;
+    top: 37.5px;
+}
+
+.user_box > .check_in {
+    position: absolute;
+    height: 55px;
+    top: 60px;
+    cursor: pointer;
+    left: 20px;
+    line-height: 55px;
+    background-image: url('../../images/me/checkIn.png');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    width: 250px;
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: #43a047;
+    color: #FFF;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.user_box > .check_in:hover {
+    background-color: #4caf50;
+}
+
+.user_purse {
+    border-radius: 0 0 3px 3px;
+    height: 50px;
+    background-color: #292B2C;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+.user_purse > .data {
+    width: 28%;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 25px;
+    margin-top: 12px;
+    float: left;
+    border-radius: 3px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.user_purse > .data > .icon {
+    height: 25px;
+    width: 25px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.3);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 25px;
+    position: absolute;
+    left: -10px;
+}
+
+.user_purse > .data > .icon.credits {
+    background-image: url('../../images/me/credits.png');
+}
+
+.user_purse > .data > .icon.pixels {
+    background-image: url('../../images/me/activity_points.png');
+}
+
+.user_purse > .data > .icon.points {
+    background-image: url('../../images/me/vip_points.png');
+}
+
+.user_purse > .data > .value {
+    float: right;
+    line-height: 26px;
+    padding-right: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Ubuntu;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgba(0,0,0,0.8);
+}

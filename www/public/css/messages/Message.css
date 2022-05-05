@@ -1,0 +1,96 @@
+.subscriber {
+    height: 60px;
+    line-height: 60px;
+    margin: 0 -25px;
+    padding: 0 25px;
+    overflow: hidden;
+}
+
+.subscriber:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.subscriber > .subscriber_avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-position: center -25px;
+    float: left;
+    border: 2px solid #3498db;
+    margin-top: 10px;
+}
+
+.subscriber > .subscriber_name {
+    margin-left: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+#messages {
+    height: 500px;
+    margin: 0 -25px;
+    padding: 25px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-image: url('../../images/messages/bg.png');
+}
+
+#messages > .message {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#messages > .message.own > .text {
+    float: right;
+    margin-right: 20px;
+}
+
+#messages > .message.other > .text {
+    float: left;
+    margin-left: 20px;
+}
+
+#messages > .message > .text {
+    background-color: #FFF;
+    margin-bottom: 10px;
+    position: relative;
+    max-width: 70%;
+    overflow-wrap: break-word;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    font-family: Roboto;
+    line-height: 150%;
+}
+
+#messages > .message.other > .text:after {
+    content: '';
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    border-width: 10px;
+    width: 20px;
+    left: -40px;
+    top: 5px;
+    position: absolute;
+}
+
+#messages > .message.own > .text:after {
+    content: '';
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+    border-width: 10px;
+    width: 20px;
+    right: -40px;
+    top: 5px;
+    position: absolute;
+}
+
+.text > .author {
+    font-weight: bold;
+    font-size: 11px;
+    color: rgba(0,0,0,0.7);
+}

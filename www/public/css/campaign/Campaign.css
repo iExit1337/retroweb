@@ -1,0 +1,34 @@
+a > .campaignArea {
+
+    width:100%;
+    height:80px;
+}
+
+a:nth-child(odd) > .campaignArea {
+    background-color: rgba(0,0,0,0.05);
+
+}
+
+a > .campaignArea > .campaignImage {
+    width:160px;
+    height:60px;
+    margin-top:10px;
+    float:left;
+    margin-left:20px;
+}
+
+a > .campaignArea > .campaignInfo {
+    width:250px;
+    padding:15px;
+    float:left;
+}
+
+a > .campaignArea > .campaignInfo > .campaignTitle {
+    font-weight:bold;
+}
+
+a > .campaignArea > .campaignInfo > .campaignDesc {
+    font-size:12px;
+    line-height:15px;
+}
+

@@ -1,0 +1,72 @@
+.event:nth-child(even) {
+    background-color: rgba(0,0,0,0.05);
+    margin: 0 -25px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.event:nth-child(odd) {
+    margin-top: 50px;
+}
+
+.event > .icon {
+    float: left;
+    width: 10%;
+}
+
+.event > .info {
+    float: right;
+    width: 90%;
+    margin-top: -10px;
+}
+
+.event > .info > .event_title {
+    font-size: 14px;
+    line-height:30px;
+    font-weight: bold;
+    float: left;
+}
+
+.event > .info > .event_date {
+   float: right;
+}
+
+.event > .info > .event_desc {
+    font-size:12px;
+    line-height:18px;
+}
+/*
+
+.event_area {
+    margin-top: 25px;
+}
+
+.event_area > .event_info_area {
+
+}
+
+.event_info_area > .event_title {
+    display:inline-block;
+    font-size: 14px;
+    line-height:30px;
+    margin-left:15px;
+    font-weight: bold;
+}
+
+.event_area:nth-child(odd)
+{
+    background-color: rgba(0,0,0,0.05);
+    margin: 0 -25px;
+    padding: 10px 25px;
+}
+
+.event_info_area > .event_desc {
+    font-size:12px;
+    line-height:18px;
+    margin-left:15px;
+}
+
+.event_info_area > .event_info {
+    float:right;
+}
+*/

@@ -1,0 +1,42 @@
+.event:nth-child(even) {
+    background-color: rgba(0,0,0,0.05);
+    margin: 0 -25px;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.event:last-child {
+    margin-bottom: -25px;
+}
+
+.event:nth-child(odd):last-child {
+    margin-bottom: 0px;
+}
+
+.event > .icon {
+    float: left;
+    width: 10%;
+}
+
+.event > .info {
+    float: right;
+    width: 90%;
+    margin-top: -10px;
+}
+
+.event > .info > .event_title {
+    font-size: 14px;
+    line-height:30px;
+    font-weight: bold;
+    float: left;
+}
+
+.event > .info > .event_date {
+    float: right;
+}
+
+.event > .info > .event_desc {
+    font-size:12px;
+    line-height:18px;
+}

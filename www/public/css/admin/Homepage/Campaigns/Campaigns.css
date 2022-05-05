@@ -1,0 +1,45 @@
+.campaignArea {
+    width:638px;
+    height:80px;
+    margin: 0 -25px;
+    margin-bottom:10px;
+}
+
+.campaignArea:nth-child(even) {
+    background-color: rgba(0,0,0,0.05);
+}
+
+
+.campaignArea:nth-child(odd):last-child > {
+    margin-bottom:-25px;
+}
+
+.campaignArea:nth-child(even):last-child {
+    margin-bottom:-25px;
+}
+
+
+
+.campaignArea > .campaignImage {
+    width:160px;
+    height:60px;
+    margin-top:10px;
+    float:left;
+    margin-left:20px;
+}
+
+.campaignArea > .campaignInfo {
+    width:250px;
+    padding:15px;
+    float:left;
+}
+
+.campaignArea > .campaignInfo > .campaignTitle {
+    font-weight:bold;
+}
+
+.campaignArea > .campaignInfo > .campaignDesc {
+    font-size:12px;
+    line-height:15px;
+}
+

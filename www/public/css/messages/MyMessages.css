@@ -1,0 +1,58 @@
+.message {
+    position: relative;
+    padding: 10px 0;
+}
+
+.message > .subject > a {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Ubuntu;
+}
+
+.message:nth-child(odd) {
+    margin: 0 -25px;
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.message > .subscribers {
+    position: relative;
+}
+
+.message > .subscribers > .subscriber {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.message > .latest_message {
+    position: relative;
+    font-size: 12px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 4px;
+}
+
+.message > .latest_message > .sender_name {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.message:nth-child(odd) > .latest_message > .sender_avatar {
+    background-color: #E6E6E6;
+}
+
+.message > .latest_message > .sender_avatar {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -16px;
+    background-color: #F2F2F2;
+    border-radius: 64px;
+    bottom: -7.5px;
+    background-position: center -15px;
+}

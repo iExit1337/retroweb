@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Idea #1</title>
+
+    <link href="public/css/960_16_col.css" rel="stylesheet">
+    <link href="public/css/reset.css" rel="stylesheet">
+    <link href="public/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,600,700,800,900);
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,600,700,800);
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            background-color: #ECEFF1;
+        }
+
+        header {
+            height: 150px;
+            background-color: #4FC3F7;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header > .top-bar {
+            height: 5px;
+            background-color: #292B2C;
+            position: relative;
+            z-index: 99;
+            box-shadow: 0 0 3px #292B2C;
+        }
+
+        #logo {
+            width: 189px;
+            background-image: url(https://habbo.md/images/logos/f35c477381a5cabdce6848d56a66385c/e0fd1c11843e1c6988c48b689aec906a/907b90.png);
+            height: 150px;
+            background-position: center;
+            position: relative;
+            z-index: 98;
+            background-repeat: no-repeat;
+        }
+
+        #flap {
+            height: 55px;
+            background-color: #292B2C;
+            border-radius: 0 0 3px 3px;
+            box-shadow: 0 0 3px #292B2C;
+            position: relative;
+            z-index: 99;
+            padding: 5px;
+        }
+
+        #flap > .avatar {
+            height: 45px;
+            width: 45px;
+            border-radius: 35px;
+            float: left;
+            background-position: center -20px;
+            background-color: #ecf0f1;
+        }
+
+        #flap > .avatar.offline {
+            border: 2px solid #c0392b;
+
+        }
+
+        #flap > .avatar.online {
+            border: 2px solid #2ecc71;
+        }
+
+        #flap > .user-information {
+            margin-left: 10px;
+            float: left;
+            margin-top: 5px;
+            font-family: Roboto;
+        }
+
+        #flap > .user-information > .username {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 16px;
+        }
+
+        #flap > .user-information > .rank {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 13px;
+        }
+
+        #flap > .links {
+            float: right;
+        }
+
+        #flap > .links > .flap-link {
+            color: #FFF;
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            line-height: 40px;
+            position: relative;
+            text-align: center;
+            border-radius: 3px;
+
+            transition: background-color 0.1s, color 0.1s;
+        }
+
+        #flap > .links > .flap-link  > .received-message {
+            position: absolute;
+            width: 7.5px;
+            height: 7.5px;
+            border-radius: 7.5px;
+            background-color: #2ecc71;
+            right: 5px;
+            top: 7px;
+        }
+
+        #flap > .links > .flap-link:hover {
+            background-color: #FFF;
+            color: #292B2C;
+        }
+
+        #flap > .links > .flap-link:nth-last-child(1) {
+            margin-right: 5px;
+        }
+
+        header > .hotelview {
+            height: inherit;
+            width: 600px;
+            position: absolute;
+            background-position: -50px 0;
+            top: 0;
+            background-repeat: no-repeat;
+            background-image: url('public/images/header/header_left.png');
+        }
+
+        header > .hotel {
+            position: absolute;
+            right: 0;
+            height: inherit;
+            width: 445px;
+            background-repeat: no-repeat;
+            background-image: url('public/images/header/hotel.png');
+            background-position: 0 -300px;
+            top: 0;
+        }
+
+        nav {
+            height: 80px;
+            background-color: #FFF;
+            position: relative;
+            z-index: 10000;
+
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+        }
+
+        ul#navigation {
+            list-style: none;
+            font-family: Roboto;
+            font-size: 18px;
+        }
+
+        ul#navigation > li {
+            float: left;
+        }
+
+        ul#navigation > li > a {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 30px;
+            text-decoration: none;
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.9);
+            transition: background 0.1s, color 0.1s;
+        }
+
+        ul#navigation > li.active > a {
+            background-color: #292b2c;
+            color: white;
+            pointer-events: none;
+        }
+
+        ul#navigation > li > a:hover {
+            background: #383a3b;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav > .subnavigation {
+            height: 30px;
+            background: #292B2C;
+        }
+
+        ul#subnav {
+            list-style: none;
+        }
+
+        ul#subnav > li {
+            float: left;
+            font-family: Open Sans;
+            font-size: 13px;
+            line-height: 30px;
+            padding: 0 30px;
+        }
+
+        ul#subnav > li > a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+        }
+
+        ul#subnav > li > a:hover {
+            color: rgba(255,255,255,0.8);
+            cursor: pointer;
+        }
+
+        ul#subnav > li.active > a {
+            color: #FFF;
+            pointer-events: none;
+        }
+
+        .box {
+            background-color: #FFF;
+            border-radius: 3px;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            font-size: 14px;
+            line-height: 175%;
+            color: rgba(0,0,0,0.7);
+            font-weight: 200;
+            font-family: Roboto;
+        }
+
+        .box > .innerbox {
+            padding: 25px;
+        }
+
+        .box > .innerbox > .title {
+            font-size: 25px;
+            font-weight: bolder;
+            color: rgba(0,0,0,0.8);
+        }
+
+        .box > .innerbox > .desc {
+            font-size: 12px;
+            color: rgba(0,0,0,0.5);
+        }
+
+        .box.userbox {
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="top-bar">
+    </div>
+    <div class="container_16" style="margin: 0 auto">
+        <div class="grid_5">
+            <div id="logo"></div>
+        </div>
+        <div class="grid_5" style="height: 150px;">
+
+        </div>
+        <div class="grid_6">
+            <div id="flap">
+                <div class="avatar offline"
+                     style="background-image: url(https://www.habbo.nl/habbo-imaging/avatarimage?figure=hr-115-42.hd-195-19.ch-3030-82.lg-275-1408.fa-1201.ca-1804-64)"></div>
+                <div class="user-information">
+                    <div class="username">
+                        iExit
+                    </div>
+                    <div class="rank">
+                        Administrator
+                    </div>
+                </div>
+                <div class="links">
+                    <a class="flap-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i><div class="received-message"></div></a>
+                    <a class="flap-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                    <a class="flap-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hotelview"></div>
+    <div class="hotel"></div>
+</header>
+<nav>
+    <div class="container_16" style="margin: 0 auto; height: 50px;">
+        <div class="grid_16">
+            <ul id="navigation">
+                <li class="active"><a href="#">iExit</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Extras</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="subnavigation">
+        <div class="container_16" style="margin: 0 auto">
+            <div class="grid_16">
+                <ul id="subnav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Profil Einstellungen</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container_16" style="margin: 25px auto;">
+    <div class="grid_9">
+        &nbsp;
+    </div>
+    <div class="grid_7">
+        <div class="box userbox">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

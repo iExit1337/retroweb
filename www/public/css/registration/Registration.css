@@ -1,0 +1,44 @@
+body, html {
+    background: #3498db; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3498db, #2980b9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3498db, #2980b9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3498db, #2980b9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3498db, #2980b9); /* Standard syntax */
+}
+
+.box {
+    border: 2px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+input[type="submit"] {
+    border: 0;
+}
+
+.button {
+    width: 100%;
+    float: inherit;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.hotelview {
+    height: 341px;
+    width: 600px;
+    position: fixed;
+    bottom: -70px;
+    left: -100px;
+    background-repeat: no-repeat;
+    background-image: url('../../images/header/header_left.png');
+}
+
+.hotel {
+    position: absolute;
+    right: 0;
+    height: 457px;
+    width: 445px;
+    background-repeat: no-repeat;
+    background-image: url('../../images/header/hotel.png');
+    bottom: 0;
+}
