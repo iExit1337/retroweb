@@ -1,0 +1,73 @@
+ToDo Liste 30.05.17
+
+- Me Page 
+	- Me
+		- Aktivste Räume
+		- News																	- Done
+		- Kampagne																- Done
+		- Eventliste															- Done 
+	- Tag/Nacht Umstellung
+		- Alert Message für Dailybelohnung										- Done 
+		- Private Messages														- Done 	
+			- Private Message senden, bearbeiten, löschen						- Done
+	
+	- Profil Einstellungen
+		- Hoteleinstellungen
+			- Freundschaftsanfrage deaktivieren/aktivieren
+			- Raumeinladungen deaktivieren/aktivieren
+			- Verfolgung deaktivieren/aktivieren
+			- Neuer Chat oder alter Chat
+			
+		- E-mail Einstellungen
+			- E-mail Adresse ändern
+			
+		- Sicherheitsmaßnahmen
+			- Passwort ändern
+			- Sicherheitscode hinzufügen(?)
+			
+		
+	- Supportticket wie bei vHabboCMS
+	
+	- Community
+		- Neuste Gruppen (?)
+		- Neuste Foreneinträge (?)
+		- User der Woche
+		
+	- News																
+		- Letzte News																- Done 
+			- Newssuche
+		- Like/Dislike																- Done 
+		- Emojischeiße
+		- Newskommentare															- Done
+			- Newskommentare Bewerten												- Done
+			- Newskommentare bearbeiten	
+				- Newskommentare löschen											- Done
+		
+	- Staffpage
+		- Positining
+		- Fast Derank für Hotelleitung und darüber.
+		- Online/Offline Avataranzeige ( Off: Transparent, On: Non-Transparent)
+		- About Me Text als Hover
+		
+	- Forum
+		 - Thread erstellen, bearbeiten und löschen
+		 - Thread schließen und öffnen
+	
+	- ACP
+		- Supportticket bearbeiten
+			- Antworten/Schließen
+			- Weiterleitungssystem zum Posteingang der Administration
+			
+		- CMS Verwarnsystem
+			- Verwarnungspunktesystem
+			- Vordefinierte Verwarnungen an User Private Messagebox
+			- Verwarnungen löschen/bearbeiten
+			- Verwarnungsablauf
+			
+		- News
+			- News erstellen/bearbeiten/löschen
+				- News Kommentare/Voting deaktivieren/aktivieren
+			- Newsübersicht
+			
+		- Benutzer
+			- Benutzer bearbeiten/löschen/bannen
